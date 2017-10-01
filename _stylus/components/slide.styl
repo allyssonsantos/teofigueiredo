@@ -1,0 +1,26 @@
+.slides
+
+  > .slide
+    display inline-block
+    padding 30px 0
+    white-space normal
+
+  > .slide + .slide
+    @media(min-width 800px)
+      margin-left: 120px;
+
+  > .logo
+
+    @media(min-width 800px)
+      display inline-block
+      margin 0 auto
+      width 300px
+
+    > .description
+      font-size pxToEm(15)
+      line-height 1.33
+      margin-top 20px
+      padding 0 15px
+
+      @media(min-width 800px)
+        font-size pxToEm(16)

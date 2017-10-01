@@ -1,0 +1,57 @@
+<header class="page-header {% if page.headerClass %}{{ page.headerClass }}{% endif %}">
+  <button class="hamburguer" title="menu">
+    <svg class="hamburguericon">
+      <use xlink:href="/img/icons.svg#hamburguer" />
+    </svg>
+  </button>
+  {% include menu-mobile.html %}
+  <div class="container">
+    <a href="/" class="logo" title="Teo Figueiredo">
+      <svg class="logoicon">
+        <use xlink:href="/img/icons.svg#logo" />
+      </svg>
+    </a>
+    <ul class="menu-desktop">
+      <li class="item insurance">
+        <a href="#" title="Seguros">Seguros</a>
+        <ul class="tooltip">
+          <li class="item">
+            <a href="seguro-automovel.html" title="Automóvel" class="links">Automóvel</a>
+          </li>
+          <li class="item">
+            <a href="seguro-moto.html" title="Moto" class="links">Moto</a>
+          </li>
+          <li class="item">
+            <a href="seguro-eletronicos.html" title="Eletrônicos" class="links">Eletrônicos</a>
+          </li>
+          <li class="item">
+            <a href="seguro-residencial.html" title="Residência" class="links">Residência</a>
+          </li>
+          <li class="item">
+            <a href="seguro-viagem.html" title="Viagem" class="links">Viagem</a>
+          </li>
+          <li class="item">
+            <a href="seguro-saude.html" title="Saúde" class="links">Saúde</a>
+          </li>
+          <li class="item">
+            <a href="seguro-empresarial.html" title="Empresarial" class="links">Empresarial</a>
+          </li>
+          <li class="item">
+            <a href="seguro-de-vida.html" title="Vida" class="links">Vida</a>
+          </li>
+        </ul>
+        <li class="item">
+          <a href="quem-somos.html#anchor" title="Fale conosco">Fale conosco</a>
+        </li>
+        <li class="item">
+          <a href="quem-somos.html" title="Quem somos">Quem somos</a>
+        </li>
+        <li class="item button">
+          <a href="cotacao.html" class="btn-standard">
+            Cotação grátis
+          </a>
+        </li>
+      </li>
+    </ul>
+  </div>
+</header>

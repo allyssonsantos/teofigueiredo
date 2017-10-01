@@ -1,0 +1,90 @@
+.generic-box
+  background-color $white
+  padding 30px 15px
+  text-align center
+  @media (min-width 800px)
+    padding 60px 15px
+
+  &.gray
+    background-color $gray-0
+
+  &.attendance
+    @media (min-width 800px)
+      padding 60px 15px 0px
+
+    > .container
+      @media (min-width 800px)
+        background-image url('../img/cartoon.png')
+        background-repeat no-repeat
+        background-position left bottom
+        padding 135px 10px 150px 465px
+
+      > .title
+        margin-bottom 30px
+        &:after
+          @media (min-width 800px)
+            margin 15px 0 0
+      > .description
+        @media (min-width 800px)
+          max-width 465px
+
+    @media (min-width 800px)
+      text-align left
+
+  > .container
+    > .title
+      color $gray
+      font-size pxToEm(18)
+      font-weight 300
+      margin-bottom 30px
+      @media (min-width 800px)
+        font-size pxToEm(22)
+        margin-bottom 40px
+
+      &:after
+        background-color $delta
+        content ''
+        display block
+        margin 15px auto 0
+        height 4px
+        width 42px
+
+    > .description
+      font-size pxToEm(15)
+      line-height 1.38
+
+      @media (min-width 800px)
+        font-size pxToEm(16)
+
+    > .testimonial
+      font-size pxToEm(15)
+      line-height 1.38
+      margin-bottom 20px
+      overflow hidden
+      transition(height 0.3s\, margin-bottom 0.3s)
+
+      @media (min-width 800px)
+        display inline-block
+        font-size pxToEm(16)
+        margin 0 auto
+        max-width 330px
+        padding 0 20px
+
+      > .author
+        display block
+        font-size pxToEm(14)
+        font-style italic
+        font-weight 300
+        margin-top 5px
+
+    > .link
+      display block
+      margin-top 20px
+      transition(opacity 0.3s\, visibility 0.3s)
+
+      @media (min-width 800px)
+        display none
+
+      &.hidden
+        opacity 0
+        visibility hidden

@@ -1,0 +1,50 @@
+<form action="#" class="form" id="cotacao">
+  <div class="container">
+    <fieldset class="contact">
+      <label for="name" class="label">
+        seu nome*
+      </label>
+      <input class="input" type="text" required="required" name="name" id="name">
+      <label for="email" class="label">
+        seu endereço de e-mail*
+      </label>
+      <input class="input" type="email" required="required" name="email" id="email">
+      <label for="tel" class="label">
+        seu telefone*
+      </label>
+      <input type="tel" class="input" required="required" name="tel" id="tel">
+      <label for="contact" class="label select">
+        como você prefere falar com a gente?*
+      </label>
+      <select name="contact" id="contact" class="input" required="required">
+        <option value="" disabled="disabled" selected="selected">opção de contato</option>
+        <option value="1">por telefone</option>
+        <option value="2">por e-mail</option>
+        <option value="3">por telefone e e-mail</option>
+      </select>
+      <label for="period" class="label select">
+        qual melhor horário para falar com você?*
+      </label>
+      <select name="period" id="period" class="input" required="required">
+        <option value="" class="option" disabled="disabled" selected="selected">período</option>
+        <option value="1">manhã</option>
+        <option value="2">tarde</option>
+        <option value="3">noite</option>
+      </select>
+      <label for="info" class="label select">
+        que tipo de seguro você quer cotar?*
+      </label>
+      <select name="insurance" id="insurance" class="input" required="required">
+        <option value="" class="option" disabled="disabled" selected="selected">tipo de seguro</option>
+        <option value="1">Automóvel</option>
+        <option value="2">Eletronico</option>
+        <option value="3">Empresarial</option>
+        <option value="4">Moto</option>
+        <option value="5">Residência</option>
+        <option value="6">Saúde</option>
+        <option value="7">Vida</option>
+      </select>
+    </fieldset>
+    <button class="submit btn-standard" type="submit">Enviar mensagem</button>
+  </div>
+</form>

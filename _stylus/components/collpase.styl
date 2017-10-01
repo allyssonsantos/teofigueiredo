@@ -1,0 +1,101 @@
+.collapse-itens
+  background-color $white
+
+  @media (min-width 800px)
+    padding 15px 0
+
+.collapse
+  background-color $white
+
+  &.gray
+    background-color $gray-50
+
+  > .collapse-header
+    padding 30px 15px 30px
+
+    > .title
+      font-size pxToEm(18)
+      font-weight 500
+
+      @media (min-width 800px)
+        font-size pxToEm(22)
+
+      &.mark
+
+        &:after
+          background-color $delta
+          content ''
+          display block
+          margin-top 10px
+          height 4px
+          width 42px
+
+    > .info
+      font-size pxToEm(14)
+      font-style italic
+      line-height 1.43
+      margin-top 10px
+
+      @media (min-width 800px)
+        font-size pxToEm(15)
+
+      &:after
+        background-color $delta
+        content ''
+        display block
+        margin-top 10px
+        height 4px
+        width 42px
+
+  > .subtitle
+    cursor pointer
+    font-size pxToEm(15)
+    font-weight 400
+    line-height 1.33
+    padding 0 65px 20px 15px
+    position relative
+    z-index 0
+
+    @media (min-width 800px)
+      cursor auto
+      padding 0 65px 10px 15px
+
+      font-size pxToEm(18px)
+
+    &:after
+      background-image url('../img/more.svg')
+      background-position center center
+      background-repeat no-repeat
+      content ''
+      display inline-block
+      height 24px
+      position absolute
+      right 15px
+      top 0px
+      transition(transform 0.3s ease-in)
+      width 24px
+
+      @media (min-width 800px)
+        display none
+
+    &.collapsed
+
+      &:after
+        transform(rotate(180deg))
+
+  > .description
+    font-size pxToEm(14)
+    font-weight 300
+    line-height 1.43
+    max-height 400px
+    overflow hidden
+    padding 0 15px 20px
+    transition(padding 0.3s\, max-height 1s)
+
+    @media (min-width 800px)
+      font-size pxToEm(16)
+
+    &.collapsed
+      max-height 0
+      padding 0 15px
+      transition(padding 0.3s\, max-height 0.3s)

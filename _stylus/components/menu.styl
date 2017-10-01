@@ -1,0 +1,36 @@
+.menu
+  background-color $primary
+  height 120%
+  left 0
+  padding 55px 40px 20px
+  position fixed
+  overflow auto
+  text-align left
+  top 0
+  width 100%
+  will-change transform
+  z-index 100
+
+  &.-hide
+    opacity 0
+    visibility hidden
+    transform(translateX(-100vw))
+    transition(opacity 0.3s\, visibility 0.3s\, transform 0.3s)
+    will-change transform
+
+  &.-show
+    opacity 1
+    visibility visible
+    transform(translateX(0vw))
+    transition(opacity 0.3s\, visibility 0.3s\, transform 0.3s)
+    will-change transform
+
+  > .links
+    color $white
+    font-size pxToEm(16)
+    line-height 2.20
+    list-style none
+
+    > .heading
+      color $second
+      font-weight 700

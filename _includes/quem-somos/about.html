@@ -1,0 +1,50 @@
+<section class="about-us">
+  <div class="container">
+    <h2 class="title">Quem somos</h2>
+    <p class="description">
+      A <a href="/" title="Teo Figueiredo Corretora de Seguros" class="link">Teo Figueiredo Corretora de Seguros</a> garante que desde a contratação até o aviso de sinistro, você receberá um atendimento transparente e atencioso.
+    </p>
+    <p class="description" id="anchor"><strong>Ficou com alguma dúvida?</strong> Entre em contato conosco, será um prazer atendê-lo!</p>
+  </div>
+  <form action="https://formspree.io/aallysson0@gmail.com" id="fale" class="form" method="POST">
+    <div class="container">
+      <fieldset class="contact">
+        <label for="name" class="label">
+          seu nome*
+        </label>
+        <input class="input" type="text" required="required" name="name" id="name">
+        <label for="email" class="label">
+          seu endereço de e-mail*
+        </label>
+        <input class="input" type="email" required="required" name="email" id="email">
+        <label for="tel" class="label">
+          seu telefone*
+        </label>
+        <input type="tel" class="input" required="required" name="tel" id="tel">
+        <label for="contact" class="label select">
+          como você prefere falar com a gente?*
+        </label>
+        <select name="contact" id="contact" class="input" required="required">
+          <option value="" disabled="disabled" selected="selected">opção de contato</option>
+          <option value="1">por telefone</option>
+          <option value="2">por e-mail</option>
+          <option value="3">por telefone e e-mail</option>
+        </select>
+        <label for="period" class="label select">
+          qual melhor horário para falar com você?*
+        </label>
+        <select name="period" id="period" class="input" required="required">
+          <option value="" class="option" disabled="disabled" selected="selected">período</option>
+          <option value="1">manhã</option>
+          <option value="2">tarde</option>
+          <option value="3">noite</option>
+        </select>
+        <label for="info" class="label">
+          sobre o que você quer saber mais?*
+        </label>
+        <textarea name="info" id="info" class="input textarea" required="required"></textarea>
+      </fieldset>
+      <button class="submit btn-standard" type="submit">Enviar mensagem</button>
+    </div>
+  </form>
+</section>

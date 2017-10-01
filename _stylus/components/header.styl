@@ -1,0 +1,135 @@
+.page-header
+  background-color $primary
+  padding 24px 0 20px
+  position fixed
+  text-align center
+  transition(box-shadow 0.3s)
+  width 100%
+  z-index 140
+
+  @media(min-width 800px)
+    background-color transparent
+    padding 30px 10px 16px
+    text-align left
+
+  > .hamburguer
+    position absolute
+    left 15px
+    top 26px
+    z-index 110
+
+    @media(min-width 800px)
+      display none
+
+  > .container
+
+    > .logo
+      height 16px
+      width 161px
+
+      > .logoicon
+        height inherit
+        width inherit
+
+    .menu-desktop
+      color $white
+      display none
+      font-size pxToEm(14)
+      font-weight 500
+      text-transform uppercase
+
+      @media(min-width 800px)
+        display inline-block
+        float right
+        margin-top -8px
+
+      > .item
+        display inline-block
+        margin 0 10px
+
+      > .button
+        position absolute
+        top -3px
+        visibility hidden
+        opacity 0
+        transition(opacity 0.3s)
+
+        &.-show
+          position relative
+          visibility visible
+          opacity 1
+
+      > .insurance
+        border-radius 100px
+        cursor pointer
+        padding 10px 30px 10px 16px
+        position relative
+
+        &:after
+          background-image url('../img/more-white.svg')
+          background-position center center
+          background-repeat no-repeat
+          content ''
+          display inline-block
+          height 24px
+          left 78px
+          position absolute
+          top 5px
+          transition(transform 0.3s ease-in)
+          width 24px
+
+        &:hover
+          background-color $primary-450
+          transition(background-color 0.3s\, opacity 0.3s)
+
+          &:after
+              transform(rotate(180deg))
+
+        &:hover .tooltip
+          visibility visible
+          opacity 1
+          transition(background-color 0.3s\, visibility 0.3s\, opacity 0.3s)
+
+        > .tooltip
+          background-color $white
+          border-radius(13px)
+          box-shadow(0 2px 8px 0 rgba(0, 0, 0, 0.35))
+          color $primary
+          display inline-block
+          left 0
+          line-height 30px
+          list-style none
+          padding 28px 20px
+          position absolute
+          top 40px
+          visibility hidden
+          opacity 0
+          transition(background-color 0.3s\, visibility 0.3s\, opacity 0.3s)
+          width 180px
+
+          .links
+            transition(color 0.3s)
+
+         .links:hover
+          color $second
+          transition(color 0.3s)
+
+  &.lighten
+   background-color $primary-400
+
+   @media(min-width 800px)
+    background-color transparent
+
+  &.home
+    background-color $primary
+
+  &.price
+    background-color $delta-600
+
+   @media(min-width 800px)
+    background-color transparent
+
+  &.-shadow
+    box-shadow(0px 0px 5px #000)
+    transition(box-shadow 0.3s\, background-color 0.3s)
+

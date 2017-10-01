@@ -1,0 +1,85 @@
+.main-box
+  background-color $primary
+  background-repeat no-repeat
+  background-size cover
+  color $white
+  padding 94px 40px 40px
+  text-align center
+  @media (min-width 800px)
+    padding 185px 40px 110px
+
+  &.about
+    @media (min-width 800px)
+      padding 107px 40px 50px
+
+    > .title
+      @media (min-width 800px)
+        width 650px
+
+  &.lighten
+    background-color $primary-400
+
+  &.price
+    background-color $delta-600
+    @media (min-width 800px)
+      padding 107px 40px 50px
+
+    > .title
+      @media (min-width 800px)
+        width 510px
+
+  &.home
+    @media (min-width 800px)
+      background-image url('../img/home.jpg')
+
+  &.house
+    @media (min-width 800px)
+      background-image url('../img/house.jpg')
+
+  &.car
+    @media (min-width 800px)
+      background-image url('../img/car.jpg')
+
+  &.bike
+    @media (min-width 800px)
+      background-image url('../img/bike.jpg')
+
+  &.trip
+    @media (min-width 800px)
+      background-image url('../img/trip.jpg')
+
+  &.business
+    @media (min-width 800px)
+      background-image url('../img/business.jpg')
+
+  &.health
+    @media (min-width 800px)
+      background-image url('../img/health.jpg')
+
+  &.life
+    @media (min-width 800px)
+      background-image url('../img/life.jpg')
+
+  &.eletronic
+    @media (min-width 800px)
+      background-image url('../img/eletronic.jpg')
+
+  > .title
+    font-size pxToEm(19)
+    font-weight 300
+    line-height 1.47
+    @media (min-width 800px)
+      font-size pxToEm(30)
+      margin 0 auto
+      width 450px
+
+    > .medium
+      font-weight 500
+
+  > .btn-standard
+    margin-top 34px
+
+  > .icon
+    height 32px
+    margin-bottom 10px
+    width 32px

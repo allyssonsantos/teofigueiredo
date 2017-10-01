@@ -1,0 +1,10 @@
+{
+  "lang": "pt-BR",
+  "name": "Teo Figueiredo",
+  "description": "Corretora de seguros Teo Figueiredo.",
+  "short_name": "Teo Figueiredo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#232526",
+  "background_color": "#3b5473"
+}

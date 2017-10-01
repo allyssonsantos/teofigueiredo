@@ -1,0 +1,60 @@
+.modal
+  background-color $white
+  border-radius(4px)
+  left 50%
+  margin 0 auto
+  max-width 90%
+  padding 0 0 25px 0
+  position fixed
+  text-align center
+  top 50%
+  transform translate(-50%, -50%)
+  width 100%
+  z-index 150
+
+  @media(min-width 800px)
+    max-width 545px
+
+  > .title
+    color $delta-600
+    font-size pxToEm(22)
+    font-weight 300
+
+    &.icon
+      padding-top: 25px
+
+      &:before
+        background-color $delta-600
+        background-image url('../img/done.svg')
+        background-repeat no-repeat
+        background-position center
+        border-radius(50%)
+        content ''
+        display block
+        height 46px
+        margin 0 auto 15px
+        width 46px
+
+    &.header
+      background-color: #6cadb5;
+      color: #fff;
+      padding: 25px 5px;
+
+  > .message
+    color $gray
+    font-size pxToEm(15)
+    line-height 1.47
+    margin 20px 0 25px
+    padding 0 15px
+
+    @media(min-width 800px)
+      padding 0 35px
+
+.overlay
+  background-color rgba(0, 0, 0, 0.6)
+  bottom 0
+  left 0
+  position fixed
+  right 0
+  top 0
+  z-index 145

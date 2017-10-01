@@ -1,0 +1,29 @@
+.about-us
+  background-color $white
+
+  > .container
+    padding 30px 15px 35px
+
+    > .title
+      font-size pxToEm(18)
+      font-weight normal
+
+      @media (min-width 800px)
+        font-size pxToEm(22)
+
+
+      &:after
+        background-color $delta
+        content ''
+        display block
+        margin-top 10px
+        height 4px
+        width 42px
+
+    > .description
+      font-size pxToEm(15)
+      line-height 1.33
+      margin-top 30px
+
+      @media (min-width 800px)
+        font-size pxToEm(18)

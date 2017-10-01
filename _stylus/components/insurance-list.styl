@@ -1,0 +1,129 @@
+.insurance-list
+  background-color $delta-600
+  color $white
+  padding 30px 15px
+  text-align center
+
+  @media(min-width 800px)
+    padding 60px 15px
+
+  > .title
+    font-size pxToEm(18)
+    font-weight 300
+
+    @media(min-width 800px)
+      font-size pxToEm(22)
+
+    &:after
+      background-color $white
+      content ''
+      display block
+      margin 15px auto 0
+      height 4px
+      width 42px
+
+  > .list
+    display inline-block
+    list-style none
+    margin-top 20px
+    width 48.5%
+
+    @media(min-width 800px)
+      display block
+      margin 0 auto
+      max-width 800px
+      width 100%
+
+    &.first
+      float left
+
+      @media(min-width 800px)
+        float none
+
+    &.second
+      float right
+
+      @media(min-width 800px)
+        float none
+
+    > .item
+      border 1px solid $white
+      border-radius(100px)
+      display inline-block
+      font-size pxToEm(14)
+      font-weight 500
+      letter-spacing -0.4px
+      margin-top 10px
+      padding 14px 0
+      transition(background-color 0.3s\, color 0.3s)
+      vertical-align top
+      width 100%
+
+      @media(min-width 800px)
+        border 0
+        border-radius(unset)
+        display inline-block
+        font-size pxToEm(16)
+        font-weight 400
+        margin 30px 40px 0
+        width 90px
+
+      &:before
+        @media(min-width 800px)
+          background-color $white
+          background-repeat no-repeat
+          background-position center center
+          border-radius(50%)
+          content 'a'
+          display inline-block
+          height 60px
+          margin-bottom 15px
+          width 60px
+
+      &.eletronic
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/smartphone-green.svg')
+
+      &.home
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/home-green.svg')
+
+      &.trip
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/trip-green.svg')
+
+      &.car
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/car-green.svg')
+
+      &.business
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/business-green.svg')
+
+      &.bike
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/bike-green.svg')
+
+      &.health
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/health-green.svg')
+
+      &.life
+        &:before
+          @media(min-width 800px)
+            background-image url('../img/heart-green.svg')
+
+      &:hover, &:active, &:focus
+        background-color $white
+        color $delta-600
+
+        @media(min-width 800px)
+          background-color unset
+          color $white

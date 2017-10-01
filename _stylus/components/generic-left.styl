@@ -1,0 +1,47 @@
+.generic-left
+  background-color $gray-50
+  padding 30px 15px
+
+  > .container
+    @media (min-width 800px)
+      padding 0 15px
+
+    > .title
+      font-size pxToEm(18)
+      font-weight normal
+
+      @media (min-width 800px)
+        font-size pxToEm(22)
+
+    > .description
+      font-size pxToEm(14)
+      font-style italic
+      line-height 1.43
+      padding 10px 0
+
+      @media (min-width 800px)
+        font-size pxToEm(15)
+
+      &:after
+        background-color $delta
+        content ''
+        display block
+        margin-top 10px
+        height 4px
+        width 42px
+
+    > .standard-list
+      font-size pxToEm(15)
+      font-weight 300
+      list-style none
+      margin-top 25px
+
+      @media (min-width 800px)
+        font-size pxToEm(16)
+
+      > .item
+        padding 0 0 20px 0
+
+        > .small
+          @media (min-width 800px)
+            font-size 90%
